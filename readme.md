@@ -21,9 +21,11 @@ Run the shell scripts in their numerical order:
 	./3_clear_output_files.sh
 		Clear any old output files
 
-Put all of your configuration files into the "configuration_files" directory
-  (something like
-    find . -iname "*.Config" -exec mv {} <full_path_to_configuration_files> \;)
+Copy all of your configuration files into the "configuration_files" directory
+
+    find . -iname "*.Config" -exec cp {} <full_path_to_configuration_files> \;)
+
+Continue running the scripts on your copied configuration files
 
 	./4_organize_configuration_files.sh
 		Moves configuration files around as necessary
