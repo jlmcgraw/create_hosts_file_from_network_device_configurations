@@ -23,7 +23,7 @@ Run the shell scripts in their numerical order:
 
 Put all of your configuration files into the "configuration_files" directory
   (something like
-    find . -iname "*.Config" -exec mv {} <full path to configuration_files> \;)
+    find . -iname "*.Config" -exec mv {} <full_path_to_configuration_files> \;)
 
 	./4_organize_configuration_files.sh
 		Moves configuration files around as necessary
@@ -46,8 +46,10 @@ You can now manually add anything to the hosts file that you don't have configs 
 		Make a combined hosts file (output_8_0_hosts.txt and output_8_0_hosts_windows.txt)
  
  Add the entries in the output_8_0_hosts.txt file to your existing hosts file or DNS system
+
  	Linux variants
 		/etc/hosts
+
  	Windows
 		\windows\system32\drivers\etc
 
